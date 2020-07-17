@@ -1,0 +1,86 @@
+.faq {
+    .faq__wrap {
+        overflow: hidden;
+        margin-left: 104px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 550px;
+        @media screen and(max-width:600px) {
+            margin-left: 18px;
+            margin-bottom: 71px;
+            width: 301px;
+            height: 71px;
+            flex-flow: row wrap;
+        }
+
+        .faq__info {
+            width: 254px;
+            height: 24px;
+            padding-right: 16px;
+            font-family: "Noto Sans KR";
+            color: #5e5e5e;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.8px;
+        }
+
+        .button__style {
+            width: 140px;
+            height: 35px;
+            cursor: pointer;
+            background-color: white;
+            border: 1px solid #d8dee5;
+            font-family: "Noto Sans KR";
+            color: #677294;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: -0.35px;
+            border-radius: 4px;
+            @media screen and(max-width:600px) {
+            }
+        }
+
+        .faq__faqs {
+            position: relative;
+
+            span:nth-child(1) {
+                position: absolute;
+                top: 50%;
+                left: 24px;
+                transform: translateY(-50%);
+            }
+            span:nth-child(2) {
+                position: absolute;
+                width: 17px;
+                height: 17px;
+                top: 50%;
+                left: 104.1px;
+                transform: translateY(-50%);
+                border: 1px solid #677294;
+                border-radius: 50%;
+            }
+        }
+        .faq__question {
+            position: relative;
+
+            span:nth-child(1) {
+                position: absolute;
+                width: 17.4px;
+                height: 17.4px;
+                top: 50%;
+                left: 9.6px;
+                transform: translateY(-50%);
+            }
+            span:nth-child(2) {
+                position: absolute;
+                top: 50%;
+                left: 44px;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.modal__head {
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    @media screen and(max-width:600px) {
+        display: inline-block;
+        position: absolute;
+        top: 8px;
+        width: 375px;
+        height: 27px;
+    }
+
+    .modal__title {
+        width: 139px;
+        height: 36px;
+        margin-top: 32px;
+        margin-left: 55px;
+        margin-bottom: 33.5px;
+        font-family: "Noto Sans KR";
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.6px;
+        @media screen and(max-width:600px) {
+            width: 102px;
+            height: 27px;
+            margin: 0 auto;
+            margin-top: 8px;
+            line-height: 27px;
+            font-family: "Noto Sans KR";
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.9px;
+        }
+    }
+    .button__style {
+        display: inline-block;
+        width: 140px;
+        height: 47px;
+        margin-top: 26.3px;
+        border-radius: 4px;
+        font-family: "Noto Sans KR";
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 38px;
+        letter-spacing: -0.9px;
+    }
+    .button--cancle {
+        margin-left: 525.3px;
+        border: 1px solid #d8dee5;
+        outline: none;
+        cursor: pointer;
+        background-color: #fff;
+        color: #677294;
+        @media screen and(max-width:600px) {
+            position: absolute;
+            top: 10px;
+            left: 18px;
+            width: 29px;
+            height: 24px;
+            padding: 0;
+            margin-top: 0;
+            margin-left: 0;
+            font-family: "Noto Sans KR";
+            font-size: 16px;
+            letter-spacing: -0.8px;
+            font-weight: 400;
+            color: #232323;
+            line-height: 24px;
+            border: none;
+        }
+    }
+    .button--apply {
+        margin-left: 12.7px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: #0077ed;
+        color: #fff;
+        span:nth-child(2) {
+            display: none;
+        }
+        @media screen and(max-width:600px) {
+            position: absolute;
+            top: 1000px;
+            width: 339px;
+            height: 44.5px;
+            margin-left: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            span:nth-child(1) {
+                display: none;
+            }
+            span:nth-child(2) {
+                display: initial;
+            }
+        }
+    }
+}
+
+hr {
+    @media screen and(max-width:600px) {
+        display: none;
+    }
+}

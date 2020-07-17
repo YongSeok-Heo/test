@@ -1,0 +1,19 @@
+.event-list {
+    margin: 0 auto;
+    margin-top: 138.5px;
+    margin-bottom: 268px;
+    width: 861px;
+    height: 315px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    @media screen and(max-width:600px) {
+        margin-top: 65px;
+        margin-left: 18px;
+        margin-bottom: 64px;
+        width: 375px;
+        height: 767px;
+        flex-flow: column wrap;
+    }
+}

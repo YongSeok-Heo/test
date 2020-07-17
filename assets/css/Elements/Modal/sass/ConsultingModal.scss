@@ -1,0 +1,25 @@
+$color-white: #fff;
+@mixin wrap($width, $height, $margin-top, $margin-bottom, $border-radius) {
+    width: $width;
+    height: $height;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+    border-radius: $border-radius;
+}
+
+body {
+    background-color: #636370;
+    @media screen and(max-width:600px) {
+        background-color: $color-white;
+    }
+}
+
+.modal__wrap {
+    margin: 0 auto;
+    background-color: $color-white;
+    @include wrap(1064px, 931px, 74px, 100px, 10px);
+
+    @media screen and(max-width:600px) {
+        @include wrap(100%, 1050px, 0, 0, 0);
+    }
+}
